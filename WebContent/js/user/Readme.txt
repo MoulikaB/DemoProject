@@ -1,0 +1,1 @@
+Include user defined javascript files in the js/user folder

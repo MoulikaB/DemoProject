@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+	
+<meta charset="ISO-8859-1">
+<script src=""></script>
+<script src="js/shared/angular.js">
+
+</script>
+<script src="js/shared/angular-route.js"></script>
+<script src="js/shared/angular-cookies.js"></script>
+<script src="js/user/Properties.js"></script>
+<script src="js/user/LoginController.js"></script> 
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+
+var app=angular.module("app",[]);
+app.controller("MainCtrl",function($scope,$http,$window){
+	$scope.checkLogin=function(result){
+	if($scope.user_name=="admin" && $scope.password=="Admin"){
+		window.location="successpage.html";
+		}	
+	else{
+		window.location="errorpage.html";
+	}
+	}
+})
+</script>
+<title>Insert title here</title>
+</head>
+
+<body ng-controller="MainCtrl">
+<form ng-submit="checkLogin()">
+<table>
+<tr><td>Enter username: </td>
+<td><input type="text" value="" name="user_name" id="user_name" ng-model="user_name" required/>
+
+</td>
+</tr>
+
+<tr><td>Enter password: </td>
+<td><input type="password" value="" name="password" id="password" ng-model="password" required/>
+
+</td>
+</tr>
+<tr>
+<td colspan="2"><input type="submit" value="Login" name="btnLogin" id="btnLogin" ng-model="btnLogin"/>
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

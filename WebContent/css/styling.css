@@ -1,0 +1,32 @@
+html, body{
+       padding:0;
+       background-image: url("../img/background.JPG");
+       background-repeat: no-repeat;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+}
+
+.row {
+       margin-right: 0px;
+       margin-left: 0px
+}
+
+.container-fluid{
+         height:100%;
+         display:table;
+         width: 100%;
+         padding: 0;
+}
+
+.bordering{
+       border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;  
+}
+.background{
+     
+     background-image: url("../img/background.JPG");
+     background-repeat: no-repeat;
+}
