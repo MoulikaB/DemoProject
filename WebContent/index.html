@@ -19,7 +19,7 @@
 var app=angular.module("app",[]);
 app.controller("MainCtrl",function($scope,$http,$window){
 	$scope.checkLogin=function(result){
-	if($scope.user_name=="admin" && $scope.password=="Admin"){
+	if($scope.user_name=="admin" && $scope.password=="password"){
 		window.location="successpage.html";
 		}	
 	else{
