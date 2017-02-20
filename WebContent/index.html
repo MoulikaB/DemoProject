@@ -31,26 +31,27 @@ app.controller("MainCtrl",function($scope,$http,$window){
 <title>Insert title here</title>
 </head>
 
-<body ng-controller="MainCtrl">
+<body style="background-color:cyan;" ng-controller="MainCtrl">
 <form ng-submit="checkLogin()">
-<table>
-<tr><td>Enter username: </td>
-<td><input type="text" value="" name="user_name" id="user_name" ng-model="user_name" required/>
 
-</td>
-</tr>
+<center>
+<br>
+<br>
 
-<tr><td>Enter password: </td>
-<td><input type="password" value="" name="password" id="password" ng-model="password" required/>
-
-</td>
-</tr>
-<tr>
-<td colspan="2"><input type="submit" value="Login" name="btnLogin" id="btnLogin" ng-model="btnLogin"/>
-</td>
-</tr>
-
-</table>
+<b><h1>Welcome to Login Page </h1></b>
+<br>
+<br>
+<br>
+<br>
+<b>Enter username: </b>&nbsp<input type="text" value="" name="user_name" id="user_name" ng-model="user_name" required />
+<br>
+<br>
+<b>Enter password: </b>&nbsp<input type="password" value="" name="password" id="password" ng-model="password" required/>
+<br>
+<br>
+<input type="submit" value="Login" name="btnLogin" id="btnLogin" ng-model="btnLogin"/>
+</center>
 </form>
+
 </body>
 </html>
