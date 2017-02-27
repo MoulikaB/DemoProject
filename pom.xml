@@ -4,6 +4,17 @@
   <artifactId>DemoProject</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
+   <distributionManagement>
+
+    <repository>
+      <id>releases</id>
+      <url>http://localhost:8080/nexus-2.14.3-02/content/repositories/releases/</url>
+    </repository>
+	    <snapshotRepository>
+      <id>snapshot</id>
+      <url>http://localhost:8080/nexus-2.14.3-02/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -33,14 +44,5 @@
 	  
     </plugins>
   </build>
-  <distributionManagement>
-    <snapshotRepository>
-      <id>snapshot</id>
-      <url>http://localhost:8080/nexus-2.14.3-02/content/repositories/snapshots/</url>
-    </snapshotRepository>
-    <repository>
-      <id>releases</id>
-      <url>http://localhost:8080/nexus-2.14.3-02/content/repositories/releases/</url>
-    </repository>
-  </distributionManagement>
+ 
 </project>
