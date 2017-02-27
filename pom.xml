@@ -48,7 +48,7 @@
                     <execution>
                         <id>default-deploy</id>
                         <configuration>
-                            <skip>true</skip>
+                            <skip>false</skip>
                         </configuration>
                     </execution>
                     <execution>
