@@ -56,7 +56,7 @@
    </executions>
    <configuration>
       <serverId>nexus</serverId>
-      <nexusUrl>http://localhost:8080/nexus/</nexusUrl>
+      <nexusUrl>http://localhost:8080/nexus-2.14.3-02/</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin>
