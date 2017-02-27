@@ -54,9 +54,8 @@
                     <execution>
                         <id>deploy-node-modules-artifact</id>
                         <phase>deploy</phase>
-                        <goals>
-                            <goal>deploy-file</goal>
-                        </goals>
+                        
+                        
                     </execution>
                 </executions>
 				</plugin>
